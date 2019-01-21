@@ -11,6 +11,7 @@ group "com.example"
 
 ext {
     gormVersion = "6.1.9.RELEASE"
+    //gormVersion = "6.1.8.RELEASE"
 }
 
 repositories {
@@ -44,6 +45,7 @@ dependencies {
     testCompile("org.spockframework:spock-core") {
         exclude group: "org.codehaus.groovy", module: "groovy-all"
     }
+    testCompile "io.micronaut.test:micronaut-test-spock:1.0.0.RC2"
 }
 
 shadowJar {
